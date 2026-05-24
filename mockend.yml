@@ -123,3 +123,53 @@ models:
         summary: Store audit logs
         status: To Do
         priority: Medium
+  Comment:
+    data:
+      - id: 9001
+        issueId: 5001
+        profileId: 2
+        message: Looks good so far.
+      - id: 9002
+        issueId: 5002
+        profileId: 3
+        message: Angular upgrade completed.
+      - id: 9003
+        issueId: 5003
+        profileId: 4
+        message: API routes tested successfully.
+      - id: 9004
+        issueId: 5004
+        profileId: 5
+        message: Dashboard styling updated.
+      - id: 9005
+        issueId: 5005
+        profileId: 6
+        message: PDF export still pending.
+      - id: 9006
+        issueId: 5006
+        profileId: 7
+        message: Login flow working locally.
+      - id: 9007
+        issueId: 5007
+        profileId: 8
+        message: Notifications sent successfully.
+      - id: 9008
+        issueId: 5008
+        profileId: 9
+        message: Kubernetes deployment started.
+      - id: 9009
+        issueId: 5009
+        profileId: 10
+        message: Invoice validation added.
+      - id: 9010
+        issueId: 5010
+        profileId: 11
+        message: Mobile UI reviewed by QA.
+      - id: 9011
+        issueId: 5011
+        profileId: 12
+        message: Stress tests running overnight.
+      - id: 9012
+        issueId: 5012
+        profileId: 1
+        message: Audit logging endpoint created.
