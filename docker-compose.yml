@@ -42,3 +42,24 @@ services:
             - "*.pyc"
         - action: rebuild
           path: ./IssuesMicroservice/requirements.txt
+
+  comments:
+    build:
+      context: ./CommentsMicroservice
+      dockerfile: Dockerfile
+    container_name: comments_microservice
+    ports:
+      - "8003:8000"
+    env_file:
+      - ./CommentsMicroservice/.env
+    restart: unless-stopped
+    develop:
+      watch:
+        - action: sync
+          path: ./CommentsMicroservice
+          target: /app
+          ignore:
+            - __pycache__/
+            - "*.pyc"
+        - action: rebuild
+          path: ./CommentsMicroservice/requirements.txt
