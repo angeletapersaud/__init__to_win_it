@@ -1,54 +1,4 @@
 models:
-  Project:
-    data:
-      - id: 101
-        name: Jira Board Clone
-        key: JBC
-        leadProfileId: 1
-      - id: 102
-        name: Angular Upgrade
-        key: ANG
-        leadProfileId: 2
-      - id: 103
-        name: API Gateway
-        key: APG
-        leadProfileId: 3
-      - id: 104
-        name: User Dashboard
-        key: USD
-        leadProfileId: 4
-      - id: 105
-        name: Reporting Service
-        key: RPT
-        leadProfileId: 5
-      - id: 106
-        name: Authentication Service
-        key: ATH
-        leadProfileId: 6
-      - id: 107
-        name: Notification Center
-        key: NTF
-        leadProfileId: 7
-      - id: 108
-        name: Kubernetes Migration
-        key: KUB
-        leadProfileId: 8
-      - id: 109
-        name: Billing API
-        key: BIL
-        leadProfileId: 9
-      - id: 110
-        name: Mobile Redesign
-        key: MOB
-        leadProfileId: 10
-      - id: 111
-        name: Performance Testing
-        key: PFT
-        leadProfileId: 11
-      - id: 112
-        name: Audit Logging
-        key: ADT
-        leadProfileId: 12
   Issue:
     data:
       - id: 5001
@@ -57,66 +7,77 @@ models:
         summary: Build board layout
         status: To Do
         priority: High
+
       - id: 5002
         projectId: 102
         assigneeProfileId: 2
         summary: Upgrade Angular version
         status: In Progress
         priority: Medium
+
       - id: 5003
         projectId: 103
         assigneeProfileId: 3
         summary: Configure API routes
         status: Done
         priority: Low
+
       - id: 5004
         projectId: 104
         assigneeProfileId: 4
         summary: Create dashboard cards
         status: To Do
         priority: High
+
       - id: 5005
         projectId: 105
         assigneeProfileId: 5
         summary: Generate PDF reports
         status: In Review
         priority: Medium
+
       - id: 5006
         projectId: 106
         assigneeProfileId: 6
         summary: Implement login flow
         status: In Progress
         priority: High
+
       - id: 5007
         projectId: 107
         assigneeProfileId: 7
         summary: Add email notifications
         status: Done
         priority: Low
+
       - id: 5008
         projectId: 108
         assigneeProfileId: 8
         summary: Deploy to Kubernetes
         status: To Do
         priority: High
+
       - id: 5009
         projectId: 109
         assigneeProfileId: 9
         summary: Create invoice API
         status: In Review
         priority: Medium
+
       - id: 5010
         projectId: 110
         assigneeProfileId: 10
         summary: Improve mobile styling
         status: Done
         priority: Low
+
       - id: 5011
         projectId: 111
         assigneeProfileId: 11
         summary: Add stress testing
         status: In Progress
         priority: High
+
       - id: 5012
         projectId: 112
         assigneeProfileId: 12

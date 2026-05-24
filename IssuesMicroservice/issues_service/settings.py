@@ -1,4 +1,3 @@
-
 from pathlib import Path
 from decouple import config
 
@@ -19,7 +18,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "rest_framework",
     "drf_spectacular",
-    "projects",
+    "issues",
 ]
 
 MIDDLEWARE = [
@@ -28,7 +27,7 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 ]
 
-ROOT_URLCONF = "projects_service.urls"
+ROOT_URLCONF = "issues_service.urls"
 
 TEMPLATES = [
     {
@@ -43,7 +42,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "projects_service.wsgi.application"
+WSGI_APPLICATION = "issues_service.wsgi.application"
 
 DATABASES = {
     "default": {
@@ -56,7 +55,6 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
     "DEFAULT_RENDERER_CLASSES": [
@@ -68,18 +66,19 @@ REST_FRAMEWORK = {
 
 # Swagger
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Projects API",
-    "DESCRIPTION": "REST API for managing projects, backed by Mockend.",
+    "TITLE": "Issues API",
+    "DESCRIPTION": "REST API for managing issues, backed by Mockend.",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
     "CONTACT": {"name": "CS-361 Team"},
 }
 
 
-PROJECTS_API_URL = config(
-    "PROJECTS_API_URL",
-    default="https://mockend.com/api/angeletapersaud/__init__to_win_it/projects",
+ISSUES_API_URL = config(
+    "ISSUES_API_URL",
+    default="https://mockend.com/api/angeletapersaud/__init__to_win_it/issues",
 )
+
 
 CORS_ALLOW_ALL_ORIGINS = config("CORS_ALLOW_ALL_ORIGINS", default=False, cast=bool)
 CORS_ALLOWED_ORIGINS = config(

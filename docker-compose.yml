@@ -21,3 +21,24 @@ services:
             - "*.pyc"
         - action: rebuild
           path: ./ProjectsMicroservice/requirements.txt
+
+  issues:
+    build:
+      context: ./IssuesMicroservice
+      dockerfile: Dockerfile
+    container_name: issues_microservice
+    ports:
+      - "8002:8000"
+    env_file:
+      - ./IssuesMicroservice/.env
+    restart: unless-stopped
+    develop:
+      watch:
+        - action: sync
+          path: ./IssuesMicroservice
+          target: /app
+          ignore:
+            - __pycache__/
+            - "*.pyc"
+        - action: rebuild
+          path: ./IssuesMicroservice/requirements.txt
